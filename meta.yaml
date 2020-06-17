@@ -7,16 +7,11 @@ package:
 
 build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
-  noarch: generic
 
 requirements:
   build:
-    #- {{ compiler('c') }}
-    #- {{ compiler('cxx') }}
-    #- {{ compiler('fortran') }}
-    #- gcc 4.8.5 # [linux]  
-    #- scons 2.*
-    #- fermi-repoman
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
 
   host:
     - ape 2.9
