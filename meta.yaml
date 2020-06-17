@@ -11,53 +11,59 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
+    #- {{ compiler('c') }}
+    #- {{ compiler('cxx') }}
+    #- {{ compiler('fortran') }}
+    #- gcc 4.8.5 # [linux]  
+    #- scons 2.*
+    #- fermi-repoman
 
   host:
-    - ape >=3
+    - ape 2.9
     - aplpy
     - astropy
-    - blas
-    - clhep
-    - cppunit
-    - f2c 0.0.2.*
+    - blas 1.1
+    - clhep 2.4.1.0
+    - cppunit 1.14.0
+    - f2c 0.0.1
     - fermi-repoman
-    - fftw
+    - fftw 3.3.8
     - git
-    - gsl
-    - healpix_cxx
+    - gsl 2.2
+    - healpix_cxx 3.31
     - matplotlib
-    - numpy >=1.11
-    - pmw
+    - numpy
+    - openblas 0.2.19|0.2.19.*
+    - pmw 2.0.1
     - python 2.7
-    - root >=6.0
-    - scipy
-    - scons
-    - swig
-    - wcslib <6
-    - xerces-c
+    - readline 6.2
+    - root5 5.34.38
+    - scons 2.*
+    - swig 3.0.12
+    - wcslib 5.18
+    - xerces-c 3.2.0
 
   run:
-    - ape >=3
+    - ape 2.9
     - aplpy
     - astropy
-    - blas
-    - clhep
-    - cppunit
-    - f2c 0.0.2.*
+    - blas 1.1
+    - clhep 2.4.1.0
+    - cppunit 1.14.0
+    - f2c 0.0.1
     - fermi-repoman
-    - fftw
+    - fftw 3.3.8
     - git
-    - gsl
-    - healpix_cxx
+    - gsl 2.2
+    - healpix_cxx 3.31
     - matplotlib
-    - numpy >=1.11
-    - pmw
+    - numpy
+    - openblas 0.2.19|0.2.19.*
+    - pmw 2.0.1
     - python 2.7
-    - root >=6.0
-    - scipy
-    - scons
-    - swig
-    - wcslib <6
-    - xerces-c
+    - readline 6.2
+    - root5 5.34.38
+    - scons 2.*
+    - swig 3.0.12
+    - wcslib 5.18
+    - xerces-c 3.2.0
