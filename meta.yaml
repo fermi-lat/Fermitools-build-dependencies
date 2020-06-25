@@ -1,9 +1,9 @@
 {% set name = "fermitools-build-deps" %}
-{% set version = "1.0" %}
+# {% set version = "1.0" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: {{ environ.get('version', 1.0)}}
 
 build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
