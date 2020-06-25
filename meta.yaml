@@ -2,10 +2,14 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ environ.get('version', 1.0)}}
+  version: {{ environ.get('VERSION', 0)}}
+
+# source:
+#   git_url: https://github.com/fermi-lat/Fermitools-build-deps.git
 
 build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
+  noarch: generic
 
 requirements:
   build:
