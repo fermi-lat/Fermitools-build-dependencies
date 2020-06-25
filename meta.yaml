@@ -1,5 +1,4 @@
 {% set name = "fermitools-build-deps" %}
-# {% set version = "1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +19,7 @@ requirements:
     - blas
     - clhep
     - cppunit
-    - f2c 0.0.2
+    - f2c 0.0.2.*
     - fermi-repoman
     - fftw
     - git
@@ -44,7 +43,7 @@ requirements:
     - blas
     - clhep
     - cppunit
-    - f2c 0.0.2
+    - f2c 0.0.2.*
     - fermi-repoman
     - fftw
     - git
