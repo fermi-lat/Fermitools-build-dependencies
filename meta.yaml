@@ -9,7 +9,6 @@ package:
 
 build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
-  noarch: generic
 
 requirements:
   build:
