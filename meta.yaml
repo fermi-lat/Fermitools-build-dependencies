@@ -1,9 +1,11 @@
 {% set name = "fermitools-build-deps" %}
-{% set version = "1.9.7" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: {{ environ.get('VERSION', 0)}}
+
+# source:
+#   git_url: https://github.com/fermi-lat/Fermitools-build-deps.git
 
 build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
@@ -13,7 +15,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
 
-  host:
+  run:
     - ape >=3
     - aplpy
     - astropy
@@ -32,33 +34,10 @@ requirements:
     - pmw
     - python 3.7.*
     - readline
-    - root >=6.0
+    - root 6.22.*
     - scons 3.0.3
     - swig
     - wcslib 5.*
     - xerces-c
-    - zstd 1.3.7
+    - zstd 
 
-  run:
-    - ape >=3
-    - aplpy
-    - astropy
-    - blas
-    - clhep
-    - cppunit
-    - f2c 0.0.2.*
-    - fermi-repoman
-    - fftw
-    - git
-    - gsl
-    - healpix_cxx
-    - matplotlib
-    - numpy >=1.11
-    - pmw
-    - python 2.7
-    - root >=6.0
-    - scipy
-    - scons
-    - swig
-    - wcslib <6
-    - xerces-c
