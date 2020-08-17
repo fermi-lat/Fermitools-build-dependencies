@@ -16,6 +16,7 @@ requirements:
     - aplpy
     - astropy
     - blas
+    - clang 9.*  # [osx]
     - clhep
     - cppunit
     - f2c 0.0.2
