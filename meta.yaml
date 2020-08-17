@@ -11,10 +11,6 @@ build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
 
 requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-
   run:
     - ape >=3
     - aplpy
@@ -40,4 +36,3 @@ requirements:
     - wcslib 5.*
     - xerces-c
     - zstd 
-
