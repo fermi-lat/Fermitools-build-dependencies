@@ -16,7 +16,6 @@ requirements:
     - aplpy
     - astropy
     - blas
-    - clang 9.*  # [osx]
     - clhep
     - cppunit
     - f2c 0.0.2
@@ -32,7 +31,7 @@ requirements:
     - python 3.7.*
     - readline
     - root 6.22.*
-    - scons 3.0.3
+    - scons 3.0.3.*
     - swig
     - wcslib 5.*
     - xerces-c
