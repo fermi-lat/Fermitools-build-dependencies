@@ -14,7 +14,7 @@ requirements:
   run:
     - ape >=3
     - aplpy
-    - astropy
+    - astropy <4
     - blas
     - clhep
     - cppunit
