@@ -16,7 +16,7 @@ requirements:
     - aplpy
     - astropy <4
     - blas
-    - clhep
+    - clhep 2.4.4.*
     - cppunit
     - f2c 0.0.2
     - fermi-repoman
