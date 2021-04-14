@@ -1,3 +1,4 @@
+intentional corruption
 {% set name = "fermitools-build-deps" %}
 
 package:
