@@ -1,4 +1,3 @@
-intentional corruption
 {% set name = "fermitools-build-deps" %}
 
 package:
@@ -13,6 +12,7 @@ build:
 
 requirements:
   run:
+    - packagedoesntexist
     - ape >=3
     - aplpy
     - astropy <4
