@@ -11,9 +11,6 @@ build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
   
 requirements:
-  build:
-    - fermi-repoman
-    - clhep 2.4.4
   run:
     - ape >=3
     - aplpy
@@ -34,7 +31,7 @@ requirements:
     - pmw
     - python >=3.7
     - readline
-    - root 
+    - root 6.22.6
     - scons 3.0.3.*
     - swig
     - wcslib 5.*
