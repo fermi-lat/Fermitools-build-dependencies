@@ -3,7 +3,7 @@
 package:
   name: {{ name|lower }}
   version: {{ environ.get('VERSION', 0)}}
-
+  
 # source:
 #   git_url: https://github.com/fermi-lat/Fermitools-build-deps.git
 
@@ -16,15 +16,14 @@ requirements:
     - aplpy
     - astropy
     - blas
-    - clhep 2.4.4
+    - clhep 2.4.4.2
     - cppunit
-    - f2c 
+    - f2c 0.0.2
     - fermi-repoman
     - fftw
     - git
     - gsl
     - healpix_cxx
-    - libcxx
     - matplotlib
     - numpy >=1.17
     - openblas
