@@ -13,13 +13,13 @@ build:
 requirements:
   build:
     - fermi-repoman
-    - clhep
+    - clhep 2.4.4
   run:
     - ape >=3
     - aplpy
     - astropy
     - blas
-    - clhep
+    - clhep 2.4.4
     - cppunit
     - f2c 
     - fermi-repoman
