@@ -11,6 +11,9 @@ build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
 
 requirements:
+  build:
+    - libcxx
+    
   run:
     - ape >=3
     - aplpy
@@ -24,6 +27,7 @@ requirements:
     - git
     - gsl
     - healpix_cxx
+    - libcxx
     - matplotlib
     - numpy >=1.17
     - openblas
