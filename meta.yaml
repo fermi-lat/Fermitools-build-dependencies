@@ -9,9 +9,12 @@ package:
 
 build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
-
+  
 requirements:
-  host:
+  build:
+    - fermi-repoman
+    - clhep
+  run:
     - ape >=3
     - aplpy
     - astropy
