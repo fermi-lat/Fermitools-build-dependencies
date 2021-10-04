@@ -11,17 +11,14 @@ build:
   number: {{ environ.get('BUILD_NUMBER', 0)}}
 
 requirements:
-  build:
-    - libcxx
-    
-  run:
+  host:
     - ape >=3
     - aplpy
     - astropy
     - blas
-    - clhep 2.4.4
+    - clhep
     - cppunit
-    - f2c 0.0.2
+    - f2c 
     - fermi-repoman
     - fftw
     - git
@@ -34,7 +31,7 @@ requirements:
     - pmw
     - python >=3.7
     - readline
-    - root 6.22.6
+    - root 
     - scons 3.0.3.*
     - swig
     - wcslib 5.*
